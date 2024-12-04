@@ -10,11 +10,6 @@ def load_env():
     if not os.path.exists(env_path):
         raise FileNotFoundError("Missing .env file. Please run 'setup-spotify-env' to configure your API keys.")
     load_dotenv(dotenv_path=env_path)
-    print("Environment Variables Loaded:")
-    print(f"SPOTIPY_CLIENT_ID: {os.getenv('SPOTIPY_CLIENT_ID')}")
-    print(f"SPOTIPY_CLIENT_SECRET: {os.getenv('SPOTIPY_CLIENT_SECRET')}")
-    print(f"SPOTIPY_REDIRECT_URI: {os.getenv('SPOTIPY_REDIRECT_URI')}")
-    
 
 def get_current_song():
     """Fetch the currently playing song from Spotify."""

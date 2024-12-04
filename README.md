@@ -19,6 +19,3 @@ A Git hook that appends your currently playing Spotify song to your commit messa
 ```bash
    setup-spotify-env
 ```
-
-## Usage
-# spotify-commits

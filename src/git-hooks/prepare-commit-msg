@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # (that's so) FETCH the current song from the Spotify bot
-current_song=$(python3 /yourPath/spotify-bot.py 2>/dev/null)
+current_song=$(python3 /Users/richelleshim/spotify-commit/src/spotify_commits/spotify_bot.py 2>/dev/null)
+
 
 
 if [ $? -ne 0 ]; then
@@ -15,4 +16,5 @@ if [ -n "$current_song" ]; then
 else
     echo "no song information available."
 fi
+
 
