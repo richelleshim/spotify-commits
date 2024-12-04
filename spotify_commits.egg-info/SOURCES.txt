@@ -1,0 +1,13 @@
+.env.example
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+spotify_commits.egg-info/PKG-INFO
+spotify_commits.egg-info/SOURCES.txt
+spotify_commits.egg-info/dependency_links.txt
+spotify_commits.egg-info/entry_points.txt
+spotify_commits.egg-info/requires.txt
+spotify_commits.egg-info/top_level.txt
+tests/test_spotify_bot.py

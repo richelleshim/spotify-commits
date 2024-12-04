@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="spotify-commits", 
-    version="1.0.0",         # Package version
+    name="spotify-commits",
+    version="1.0.0",
     author="Richelle Shim",
     author_email="richelleshim@gmail.com",
     description="A Git hook to append the current Spotify song to commit messages.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/richelleshim/spotify-commits",  # Update with your repo
-    packages=find_packages(),  # Automatically discover package directories
+    url="https://github.com/richelleshim/spotify-commits",
+    packages=find_packages(),
     install_requires=[
         "spotipy",
-        "python-dotenv"
+        "python-dotenv",
     ],
     entry_points={
         "console_scripts": [

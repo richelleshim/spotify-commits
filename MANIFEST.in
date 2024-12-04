@@ -1,2 +1,3 @@
 include README.md
 include .env.example
+include src/git-hooks/prepare-commit-msg

@@ -1,0 +1,4 @@
+[console_scripts]
+install-git-hook = spotify_commits.install_git_hook:install_git_hook
+setup-spotify-env = spotify_commits.setup_env:setup_env
+spotify-git-bot = spotify_commits.spotify_bot:main
