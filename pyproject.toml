@@ -2,29 +2,30 @@
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-
 [project]
-name="spotify-commits"
-version="1.0.0"
+name = "spotify-github-bot"
+version = "1.0.0"
 authors = [
-  { name="Richelle Shim", email="richelleshim@gmail.com" },
+  { name = "Richelle Shim", email = "richelleshim@gmail.com" }
 ]
-description="A Git hook to append the current Spotify song to commit messages."
+description = "A GitHub bot that appends the current Spotify song to commit messages."
 requires-python = ">=3.8"
 readme = "README.md"
-classifiers=[
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
 ]
-dependencies = [spotipy, python-dotenv]
-
-[project.entry-points.console_scripts]
-spotify-git-bot = "spotify_commits.spotify_bot:main"
-setup-spotify-env = "spotify_commits.setup_env:setup_env"
-install-git-hook = "spotify_commits.install_git_hook:install_git_hook"
-
+dependencies = [
+  "spotipy",
+  "python-dotenv"
+]
 
 [project.urls]
-Homepage = "https://github.com/richelleshim/spotify-commits"
-Issues = "https://github.com/richelleshim/spotify-commits/issues"
+Homepage = "https://github.com/richelleshim/spotify-github-bot"
+Issues = "https://github.com/richelleshim/spotify-github-bot/issues"
+
+[project.entry-points.console_scripts]
+spotify-git-bot = "spotify_github_bot.spotify_bot:main"
+setup-spotify-env = "spotify_github_bot.setup_env:setup_env"
+install-git-hook = "spotify_github_bot.install_git_hook:install_git_hook"
