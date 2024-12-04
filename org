@@ -1,0 +1,12 @@
+spotify_git_bot/
+│
+├── spotify_git_bot/           # Package directory
+│   ├── __init__.py            # Makes this a package
+│   ├── spotify_bot.py         # Main script
+│   ├── setup_env.py           # Script to configure API keys
+│   └── other_modules.py       # Additional functionality (if needed)
+│
+├── .env.example               # Template for environment variables
+├── setup.py                   # Package metadata and installation configuration
+├── requirements.txt           # Dependencies
+└── README.md                  # Documentation
