@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="spotify-commits",
-    version="1.0.0",
+    version='1.0.1-alpha',
     author="Richelle Shim",
     author_email="richelleshim@gmail.com",
     description="A Git hook to append the current Spotify song to commit messages.",
